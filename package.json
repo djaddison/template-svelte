@@ -7,8 +7,11 @@
     "start": "vite",
     "preview": "vite preview",
     "build": "vite build",
+    "clean": "rm -rf dist",
+    "realclean": "rm -rf dist node_modules yarn",
     "format-code": "prettier src/**/*.{ts,tsx,css,html} --write",
-    "check": "svelte-check --tsconfig ./tsconfig.json"
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "check-code-formatting": "prettier src/**/*.{ts,tsx,css,html} --check"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.0.1",
