@@ -1,6 +1,6 @@
-import App from "./App.svelte"
+import Application from "./Application.svelte"
 import "./index.global.css"
 
-export const app = new App({
-  target: document.getElementById("app"),
+export const application = new Application({
+  target: document.getElementById("root"),
 })
